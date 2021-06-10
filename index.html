@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us</p>
+      </header>
+      <main>
+        <form action="#" id="survey-form">
+          <fieldset>
+            <legend>Personal data</legend>
+            <div class="survey-form-block">
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                autofocus
+                required
+              />
+              <div class="survey-form-block__">
+                <div class="survey-form-block__">
+                  <div class="survey-form-block__ survey-form-block__--"></div>
+                </div>
+              </div>
+            </div>
+            <div class="survey-form-block">
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="survey-form-block">
+              <label id="number-label" for="age"
+                >Age <span> (optional)</span></label
+              >
+              <input
+                type="number"
+                min="10"
+                max="99"
+                id="number"
+                placeholder="Age"
+              />
+            </div>
+            <div class="survey-form-block">
+              <label class="age" for="age">Choose your region</label>
+              <select id="dropdown">
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="Nth-America">North America</option>
+                <option value="Sth-America">South America</option>
+                <option value="Africa">Africa</option>
+                <option value="Australia">Australia</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Skills</legend>
+            <div class="survey-form-block">
+              <label for="work" class="work-radio"
+                >What do you prefere to work with
+                <label class="first-label">
+                  <input type="radio" name="work" value="HTML" checked />HTML
+                </label>
+                <label>
+                  <input type="radio" name="work" value="CSS" />CSS
+                </label>
+                <label> <input type="radio" name="work" value="JS" />JS </label>
+              </label>
+            </div>
+            <div class="survey-form-block">
+              <label class="program" for="program">Program you are using</label>
+              <select id="dropdown-program">
+                <option value="visual-studio-code">Visual studio code</option>
+                <option value="visual-studio">Visual studio</option>
+                <option value="тotepad">Notepad++</option>
+                <option value="sublime-text">Sublime Text</option>
+                <option value="intellij">IntelliJ</option>
+                <option value="vim">Vim</option>
+                <option value="eclipce">Eclipce</option>
+                <option value="atom">Atom</option>
+              </select>
+            </div>
+            <div class="survey-form-block">
+              <label for="checkbox" class="checkbox-skills">
+                Already know how to use:
+                <label class="first-label">
+                  <input type="checkbox" name="option1" value="option1" /> HTML
+                </label>
+                <label>
+                  <input type="checkbox" name="option2" value="option2" /> CSS
+                </label>
+                <label>
+                  <input type="checkbox" name="option3" value="option3" /> sass,
+                  less , scss
+                </label>
+                <label>
+                  <input type="checkbox" name="option4" value="option4" /> JS
+                </label>
+                <label>
+                  <input type="checkbox" name="option5" value="option5" /> Node
+                  Js
+                </label>
+                <label>
+                  <input type="checkbox" name="option6" value="option6" /> Gulp
+                </label>
+                <label>
+                  <input type="checkbox" name="option7" value="option7" /> Git
+                </label>
+                <label>
+                  <input type="checkbox" name="option8" value="option8" /> BEM
+                </label>
+                <label>
+                  <input type="checkbox" name="option9" value="option9" />
+                  Git-hub
+                </label>
+              </label>
+            </div>
+            <div class="survey-form-block">
+              <label id="aditional-pros" for="aditional"
+                >Aditional skills</label
+              >
+              <textarea
+                name="aditional"
+                id="textarea"
+                cols="10"
+                rows="10"
+                placeholder="Some aditional advantahes.."
+              ></textarea>
+            </div>
+          </fieldset>
+          <button id="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

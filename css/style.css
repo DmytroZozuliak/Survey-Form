@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-green);
+  background-image: -webkit-gradient(linear, left top, right top, from(black), color-stop(rgba(6, 65, 4, 0.2)), color-stop(rgba(0, 0, 0, 0.5)), color-stop(rgba(6, 65, 4, 0.2)), to(black)), url(https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-image: linear-gradient(90deg, black, rgba(6, 65, 4, 0.2), rgba(0, 0, 0, 0.5), rgba(6, 65, 4, 0.2), black), url(https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 86%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#title {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin-bottom: 0;
+  color: rgba(23, 207, 137, 0.9);
+}
+
+#description {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: white;
+}
+
+main {
+  width: 100%;
+  background: rgba(1, 48, 24, 0.1);
+  margin: 20px auto;
+}
+
+#survey-form {
+  color: lightgrey;
+  margin: 20px 0;
+}
+
+#survey-form legend {
+  letter-spacing: 2px;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+#survey-form fieldset {
+  margin-bottom: 30px;
+}
+
+#survey-form .survey-form-block {
+  margin: 30px;
+}
+
+#survey-form .survey-form-block label {
+  font-size: 1.6rem;
+}
+
+#survey-form .survey-form-block label span {
+  font-size: 0.9rem;
+}
+
+#survey-form .survey-form-block input,
+#survey-form .survey-form-block select {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+#survey-form .survey-form-block input[type='radio'],
+#survey-form .survey-form-block input[type='checkbox'] {
+  width: auto;
+  margin: 10px 20px 10px;
+}
+
+#survey-form > #submit {
+  width: 90%;
+  height: 50px;
+  display: block;
+  background: #10b454;
+  text-align: center;
+  margin: 30px auto;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.work-radio,
+.checkbox-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#textarea {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.first-label {
+  margin-top: 20px;
+}

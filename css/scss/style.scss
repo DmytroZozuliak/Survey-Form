@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+$color-green: #37af65;
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+  &:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-green);
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1),
+        rgba(6, 65, 4, 0.2),
+        rgba(0, 0, 0, 0.5),
+        rgba(6, 65, 4, 0.2),
+        rgba(0, 0, 0, 1)
+      ),
+      url(https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.container {
+  width: 86%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#title {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 2.8rem;
+  margin-bottom: 0;
+  color: rgba(23, 207, 137, 0.9);
+}
+#description {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: white;
+}
+
+main {
+  // height: 1200px;
+  width: 100%;
+  background: rgba(1, 48, 24, 0.1);
+  // border: solid 4px white;
+  margin: 20px auto;
+  // padding-top: -20px;
+}
+#survey-form {
+  color: lightgrey;
+  margin: 20px 0;
+
+  legend {
+    letter-spacing: 2px;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  fieldset {
+    margin-bottom: 30px;
+  }
+  .survey-form-block {
+    margin: 30px;
+    label {
+      font-size: 1.6rem;
+      span {
+        font-size: 0.9rem;
+      }
+    }
+
+    input,
+    select {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px 10px;
+      font-size: 1.2rem;
+      color: grey;
+    }
+    input[type='radio'],
+    input[type='checkbox'] {
+      width: auto;
+      margin: 10px 20px 10px;
+    }
+  }
+  > #submit {
+    width: 90%;
+    height: 50px;
+    display: block;
+    background: rgb(16, 180, 84);
+    text-align: center;
+    margin: 30px auto;
+    color: white;
+    font-size: 1.2rem;
+  }
+}
+
+// TODO: dsad
+// * after
+// !аві
+// ? fdsfds
+// todo dsad
+// dsadsa
+// * rename
+
+.work-radio,
+.checkbox-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.first-label {
+  margin-top: 20px;
+}
